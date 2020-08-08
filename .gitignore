@@ -127,3 +127,18 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# OS System file
+.Trashes
+.Thumbs.db
+.ehthumbs.db
+.DS_Store
+
+# VSCode
+.vscode/*
+*.code-workspace
+.history
+
+# PyCharm
+.idea/*
+
