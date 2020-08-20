@@ -103,7 +103,7 @@ class Dataset(object):
 
         return loss, aux
 
-    def dataset_backprop_postproc(self, G_loss, aux, mode=None):
+    def backprop_postproc(self, G_loss, aux, mode=None):
         if mode is None:
             mode = self.mode
 
@@ -159,6 +159,7 @@ class Dataset(object):
             accuracy = np.mean(correct)
         else:
             raise ValueError()
+        return accuracy
 
     def get_estimate(self, output, mode=None):
         if mode is None:

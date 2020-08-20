@@ -6,6 +6,9 @@ __pycache__/
 # C extensions
 *.so
 
+# exclude the virtual environment
+venv_k4ji
+
 # Distribution / packaging
 .Python
 build/
