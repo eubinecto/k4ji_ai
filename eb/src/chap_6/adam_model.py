@@ -31,8 +31,8 @@ class AdamModel(MlpModel):
 
         pm[key] -= self.learning_rate * delta
 
-    @classmethod
-    def eval_adam_delta(cls, pm, key, delta):
+    @staticmethod
+    def eval_adam_delta(pm, key, delta):
         ro_1 = 0.9
         ro_2 = 0.999
         epsilon = 1.0e-8
