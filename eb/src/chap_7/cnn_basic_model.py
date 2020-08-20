@@ -85,13 +85,12 @@ class CnnBasicModel(AdamModel):
         if isinstance(hconfigs, list) and \
                 not isinstance(hconfigs[0], (list, int)):
             hconfigs = [hconfigs]
+        self.maps = None
         self.show_maps = show_maps
         self.need_maps = False
         self.kernels = []
         super(CnnBasicModel, self).__init__(name, dataset, hconfigs)
         self.use_adam = True
-        self.maps = None
-        self.need_maps = None
 
     def alloc_layer_param(self, input_shape, hconfig):
         layer_type = get_layer_type(hconfig)

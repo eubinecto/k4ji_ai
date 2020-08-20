@@ -32,13 +32,13 @@ class Model(object):
             self.visualize(show_cnt)
 
     def train(self, epoch_count, batch_size, learning_rate, report):
-        pass
+        raise NotImplementedError
 
     def test(self):
-        pass
+        raise NotImplementedError
 
     def visualize(self, show_cnt):
-        pass
+        raise NotImplementedError
 
 
 class MlpModel(Model):
@@ -47,11 +47,11 @@ class MlpModel(Model):
     """
     def __init__(self, name, dataset, hconfigs):
         super(MlpModel, self).__init__(name, dataset)
-        self.init_parameters(hconfigs)
         self.hconfigs = None
         self.pm_hiddens = None
         self.pm_output = None
         self.learning_rate = None
+        self.init_parameters(hconfigs)
 
     def init_parameters(self, hconfigs):
         self.hconfigs = hconfigs
@@ -79,7 +79,7 @@ class MlpModel(Model):
         bias = np.zeros([shape[-1]])
         return weight, bias
 
-    def model_train(self,
+    def train(self,
                         epoch_count=10,
                         batch_size=10,
                         learning_rate=0.001, report=0):
@@ -111,14 +111,14 @@ class MlpModel(Model):
         tm_total = int(time.time()) - time1
         print('Model {} train ended in {} secs:'.format(self.name, tm_total))
 
-    def model_test(self):
+    def test(self):
         teX, teY = self.dataset.get_test_data()
         time1 = int(time.time())
         acc = self.eval_accuracy(teX, teY)
         time2 = int(time.time())
         self.dataset.test_prt_result(self.name, acc, time2 - time1)
 
-    def model_visualize(self, num):
+    def visualize(self, num):
         print('Model {} Visualization'.format(self.name))
         deX, deY = self.dataset.get_visualize_data(num)
         est = self.get_estimate(deX)
