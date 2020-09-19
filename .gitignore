@@ -9,6 +9,10 @@ __pycache__/
 # exclude the virtual environment
 venv_k4ji
 
+#data
+eb/data
+
+
 # Distribution / packaging
 .Python
 build/
@@ -145,3 +149,5 @@ dmypy.json
 # PyCharm
 .idea/*
 
+/eb/data/
+/eb/data/

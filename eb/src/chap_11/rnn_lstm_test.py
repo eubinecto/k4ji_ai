@@ -1,4 +1,3 @@
-from eb.src.chap_11.rnn_lstm_model import *
 from eb.src.chap_11.dataset_sounds import *
 
 
