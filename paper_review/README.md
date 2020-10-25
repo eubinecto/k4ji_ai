@@ -4,8 +4,8 @@
 | 10/03 |  | 개천절              |
 | 10/10 | 유빈,용택 | code related to 09/26 |
 | 10/17 |  | 시험기간 휴식 |
-| 10/24 | 재인,예진 | Encoder-Decoder with Atrous Separable Convolution for Semantic Image Segmentation |
-| 10/31 |  |  |
+| 10/25 | 재인,예진 | Encoder-Decoder with Atrous Separable Convolution for Semantic Image Segmentation |
+| 10/31 | 재인,예진 | code related to 10/25 |
 | 11/07 |        |                            |
 | 11/14 |  |         |
 | 11/21 |  |     |
