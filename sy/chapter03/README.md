@@ -4,7 +4,7 @@
 ## 소프트맥스 함수
 소프트맥스 함수는 로짓값 벡터를 확률 분포 벡터로 변환해주는 비선형 함수이다. 일반식을 구하면 아래와 같다.
 
-<img src="https://latex.codecogs.com/svg.latex?\;y_{i} = \frac{e^{x_{i}}}{e^{x_{1}}+\cdots +e^{x_{n}}}" />
+<img src="https://latex.codecogs.com/gif.download?logP%28X%5Cmid%20Y_%7Bi%7D%29P%28Y_%7Bi%7D%29" />
 
 하지만 이 식은 코드를 통한 계산 과정에서 오류를 일으킬 수 있으므로 아래와 같이 변형된 식을 사용한다.
 
