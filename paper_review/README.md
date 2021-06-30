@@ -1,3 +1,5 @@
+### paper reviews are organized in [notion](https://www.notion.so/540e516159ef475cb9ce7fffcfc78880?v=d1e48cba09ef4dbda10600191bfc0a72)
+
 | 일자  | 발표자 | 논문                                 |
 |-------|--------|--------------------------------------|
 | 09/26 | 유빈,용택 | Attention is All you Need    |
